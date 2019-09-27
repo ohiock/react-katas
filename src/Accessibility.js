@@ -2,10 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 
 import { Page } from "./Page";
-
-const Section = styled.section`
-  margin-bottom: 35px;
-`;
+import { Button, Section } from "./Shared";
 
 const Input = styled.input`
   padding: 5px 10px;
@@ -18,15 +15,6 @@ const Input = styled.input`
 const Label = styled.label`
   display: block;
   margin-bottom: 5px;
-`;
-
-const Button = styled.button`
-  margin: 0 10px;
-  padding: 5px 10px;
-
-  border: none;
-  border-radius: 5px;
-  background: #f9dd5d;
 `;
 
 const listItems = {
@@ -54,7 +42,11 @@ const Accessibility = () => (
       <p>
         "A more complex user experience should not mean a less accessible one."
       </p>
-      <a href="https://reactjs.org/docs/accessibility.html" target="_blank">
+      <a
+        href="https://reactjs.org/docs/accessibility.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         React Accessibility Docs
       </a>
     </Section>

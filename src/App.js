@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Accessibility } from "./Accessibility";
 import { Home } from "./Home";
+import { CodeSplitting } from "./CodeSplitting";
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -12,16 +13,20 @@ const AppContainer = styled.div`
   color: #00253e;
 `;
 
-function App() {
-  return (
-    <AppContainer>
-      <Router>
-        <Route path="/" exact component={Home} />
-        <Route path="/0" exact component={Home} />
-        <Route path="/1" component={Accessibility} />
-      </Router>
-    </AppContainer>
-  );
-}
+const LoadedAlert = React.lazy(() => import("./AlertToLoad"));
+
+const App = () => (
+  <AppContainer>
+    <Router>
+      <Route path="/" exact component={Home} />
+      <Route path="/0" component={Home} />
+      <Route path="/1" component={Accessibility} />
+      <Route path="/2" component={CodeSplitting} />
+      <Suspense fallback={null}>
+        <Route exact path={`/2/route-code-splitting`} component={LoadedAlert} />
+      </Suspense>
+    </Router>
+  </AppContainer>
+);
 
 export default App;

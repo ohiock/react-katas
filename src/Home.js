@@ -6,7 +6,7 @@ const Home = () => (
   <Page title="React Katas">
     <p>
       There's a bunch of stuff in React that I rarely leverage, so this is an
-      opportunity to practice using them.
+      opportunity to practice using it.
     </p>
     <p>
       <Link to="/1">Check it out</Link>

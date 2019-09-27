@@ -29,7 +29,7 @@ const Page = ({ title, children }) => {
       <div>{children}</div>
       <footer>
         {!!pageNumber && <Link to={`/${pageNumber - 1}`}>{`< Previous`}</Link>}
-        <Link to={`/${pageNumber + 1}`}>{`Next >`}</Link>
+        {!!pageNumber && <Link to={`/${pageNumber + 1}`}>{`Next >`}</Link>}
       </footer>
     </PageContainer>
   );

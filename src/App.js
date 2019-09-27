@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Accessibility } from "./Accessibility";
 import { Home } from "./Home";
 import { CodeSplitting } from "./CodeSplitting";
+import { Context } from "./Context";
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -25,6 +26,7 @@ const App = () => (
       <Suspense fallback={null}>
         <Route exact path={`/2/route-code-splitting`} component={LoadedAlert} />
       </Suspense>
+      <Route path="/3" component={Context} />
     </Router>
   </AppContainer>
 );

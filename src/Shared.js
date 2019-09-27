@@ -4,6 +4,14 @@ const Section = styled.section`
   margin-bottom: 35px;
 `;
 
+const Input = styled.input`
+  padding: 5px 10px;
+  width: 250px;
+
+  border: none;
+  border-radius: 5px;
+`;
+
 const Button = styled.button`
   margin: 0 10px;
   padding: 5px 10px;
@@ -18,4 +26,4 @@ const Button = styled.button`
   }
 `;
 
-export { Section, Button };
+export { Section, Input, Button };

@@ -2,15 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 
 import { Page } from "./Page";
-import { Button, Section } from "./Shared";
-
-const Input = styled.input`
-  padding: 5px 10px;
-  width: 250px;
-
-  border: none;
-  border-radius: 5px;
-`;
+import { Button, Input, Section } from "./Shared";
 
 const Label = styled.label`
   display: block;

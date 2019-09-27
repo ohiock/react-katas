@@ -9,7 +9,7 @@ const Home = () => (
       opportunity to practice using them.
     </p>
     <p>
-      <Link to="/accessbility">Check it out</Link>
+      <Link to="/1">Check it out</Link>
     </p>
   </Page>
 );

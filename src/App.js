@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
 import { Accessibility } from "./Accessibility";
 import { Home } from "./Home";
 
 const AppContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 25px;
 
   background: #00b5a3;
   color: #00253e;
@@ -16,7 +17,8 @@ function App() {
     <AppContainer>
       <Router>
         <Route path="/" exact component={Home} />
-        <Route path="/accessibility" component={Accessibility} />
+        <Route path="/0" exact component={Home} />
+        <Route path="/1" component={Accessibility} />
       </Router>
     </AppContainer>
   );

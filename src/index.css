@@ -46,11 +46,20 @@ h3 {
 }
 
 h1 {
+  margin-bottom: 25px;
+
   font-size: 4.8rem;
 }
 
 h2 {
+  margin-bottom: 15px;
+
+  color: #00253e;
+  font-size: 2.4rem;
 }
 
 h3 {
+  color: #00253e;
+  font-size: 1.6rem;
+  font-weight: bold;
 }

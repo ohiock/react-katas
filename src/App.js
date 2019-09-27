@@ -5,6 +5,7 @@ import { Accessibility } from "./Accessibility";
 import { Home } from "./Home";
 import { CodeSplitting } from "./CodeSplitting";
 import { Context } from "./Context";
+import { ErrorBoundaries } from "./ErrorBoundaries";
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -27,6 +28,7 @@ const App = () => (
         <Route exact path={`/2/route-code-splitting`} component={LoadedAlert} />
       </Suspense>
       <Route path="/3" component={Context} />
+      <Route path="/4" component={ErrorBoundaries} />
     </Router>
   </AppContainer>
 );

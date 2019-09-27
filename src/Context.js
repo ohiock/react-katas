@@ -18,14 +18,14 @@ const InputContext = React.createContext();
 
 const LevelOne = () => (
   <LevelContainer>
-    <p>This is level one. It has no props.</p>
+    <p>This is component one. It has no props.</p>
     <LevelTwo />
   </LevelContainer>
 );
 
 const LevelTwo = () => (
   <LevelContainer>
-    <p>This is level two. It has no props.</p>
+    <p>This is component two. It has no props.</p>
     <LevelThree />
   </LevelContainer>
 );
@@ -35,7 +35,7 @@ const LevelThree = () => (
     {value => (
       <LevelContainer>
         <p>
-          This is level three. It has no props. The value from context is "
+          This is component three. It has no props. The value from context is "
           {value}".
         </p>
       </LevelContainer>

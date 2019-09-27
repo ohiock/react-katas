@@ -1,0 +1,56 @@
+@import-normalize;
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Slabo 27px", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  margin: 0 3px;
+  padding: 2px 5px;
+
+  border-radius: 5px;
+  background: #ffffff;
+  color: #00253e;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #00253e;
+  color: #ffffff;
+}
+
+p {
+  margin: 0 0 25px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+}
+
+h3 {
+}
